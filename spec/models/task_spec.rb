@@ -18,7 +18,7 @@ RSpec.describe 'Fonction de modèle de tâche', type: :model do
         expect(Task.search_title('first').count).to eq 1
       end
     end
-
+    
     context "Lorsque l'état est recherché avec la méthode scope" do
       it "Les tâches qui correspondent exactement au statut sont réduites" do
         # Title Exemple de code pour une méthode de recherche définie dans la portée comme search_title dans
@@ -31,7 +31,7 @@ RSpec.describe 'Fonction de modèle de tâche', type: :model do
         expect(Task.search_status('Terminé').count).to eq 1
       end
     end
-    
+
     context "Lors de l'exécution d'une recherche floue et d'une recherche d'état Title" do
       it "Les tâches qui correspondent exactement au statut sont réduites" do
         expect(Task.search_status('Terminé')).not_to include(first_task)
