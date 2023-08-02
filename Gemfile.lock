@@ -90,7 +90,20 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    kaminari (1.2.2)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.2)
+      kaminari-activerecord (= 1.2.2)
+      kaminari-core (= 1.2.2)
+    kaminari-actionview (1.2.2)
+      actionview
+      kaminari-core (= 1.2.2)
+    kaminari-activerecord (1.2.2)
+      activerecord
+      kaminari-core (= 1.2.2)
+    kaminari-core (1.2.2)
     listen (3.8.0)
+
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.21.3)
@@ -108,6 +121,7 @@ GEM
     mimemagic (0.3.10)
       nokogiri (~> 1)
       rake
+
     mini_mime (1.1.2)
     minitest (5.19.0)
     msgpack (1.7.2)
@@ -122,6 +136,7 @@ GEM
       net-protocol
     nio4r (2.5.9)
     nokogiri (1.12.5-arm64-darwin)
+
       racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
@@ -251,6 +266,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   factory_bot_rails
   jbuilder (~> 2.7)
+  kaminari
   listen (~> 3.2)
   nokogiri (~> 1.12.4)
   pg (>= 0.18, < 2.0)
