@@ -21,4 +21,3 @@ class ApplicationController < ActionController::Base
         redirect_to tasks_path, alert: "Vous seul pouvez accéder" unless current_user ==  user
         end
 end
-
