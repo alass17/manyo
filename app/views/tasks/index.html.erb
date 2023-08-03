@@ -20,9 +20,9 @@
       <th><%= Task.human_attribute_name(:title) %></th>
       <th><%= Task.human_attribute_name(:content) %></th>
       <th><%= Task.human_attribute_name(:created_at)%></th>
-      <th> <%= link_to "Date d'expiration", sort_deadline_on: true %></th>
-      <th><%= link_to "Priorité",sort_priority: true %></th>
-      <th> Status</th>
+      <th> <%= link_to "expiration date", sort_deadline_on: true %></th>
+      <th><%= link_to "priority",sort_priority: true %></th>
+      <th> status</th>
       <th colspan="3"></th>
     </tr>
   </thead>
